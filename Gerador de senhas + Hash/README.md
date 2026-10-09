@@ -59,7 +59,7 @@ nasm -f win32 password_generator_win.asm -o password_generator_win.obj
 
 # Linkar (escolha uma opção):
 # Com Microsoft Linker:
-link password_generator_win.obj kernel32.lib /subsystem:console /entry:_start /out:password_generator_win.exe
+link password_generator_win.obj kernel32.lib /subsystem:console /entry:start /out:password_generator_win.exe
 
 # Com GCC:
 gcc password_generator_win.obj -o password_generator_win.exe
